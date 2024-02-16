@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital@1&display=swap');
-
 * {
   font-family: 'Zilla Slab', serif;
   margin: 0;
@@ -13,13 +12,17 @@
 
 body {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background: url('../assets/sliki/pozadina1.jpg') center/cover no-repeat;
+  flex-direction: column; 
+  min-height: 100vh; 
+  background: url('../../assets/sliki/contact.jpg') center/cover no-repeat;
   background-size: cover;
-  height: 100vh;
   margin: 0;
+  padding-top: 100px;
+  padding-left: 450px;
+}
+section {
+  text-align: center;
+  padding: 50px 20px;
 }
 
 header {
@@ -27,7 +30,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,19 +43,6 @@ header {
   font-size: 2em;
   color: #162938;
   user-select: none;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-}
-
-li {
-  padding-right: 15px;
-}
-
-a {
-  color: inherit;
 }
 
 .navigation {
@@ -90,6 +80,45 @@ a {
 .navigation a:hover::after {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.contact-info,
+.contact-links {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info p,
+.contact-links p {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #160804;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 15px;
+  background-color: #351811;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+  background-color: #162938;
 }
 
 footer {
